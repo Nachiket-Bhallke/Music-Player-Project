@@ -81,7 +81,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         e.target.classList.remove('ri-play-circle-line');
         e.target.classList.add('ri-pause-circle-line');
         audioElement.src = `Audios/${songIndex+1}.mp3`
-        imageContainer.src = `images/${songIndex+1}.jpg`;
+        imageContainer.src = `images/${songIndex+1}.webp`;
         songTitle.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
@@ -136,7 +136,7 @@ audioElement.addEventListener('ended', function() {
         songIndex += 1;
     }
     audioElement.src = `Audios/${songIndex+1}.mp3`;
-    imageContainer.src = `images/${songIndex+1}.jpg`;
+    imageContainer.src = `images/${songIndex+1}.webp`;
     songTitle.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
