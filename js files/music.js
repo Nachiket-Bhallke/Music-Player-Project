@@ -100,7 +100,7 @@ document.getElementById('next').addEventListener('click', ()=>{
         songIndex += 1;
     }
     audioElement.src = `Audios/${songIndex+1}.mp3`;
-    imageContainer.src = `images/${songIndex+1}.jpg`;
+    imageContainer.src = `images/${songIndex+1}.webp`;
     songTitle.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -118,7 +118,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
         songIndex -= 1;
     }
     audioElement.src = `Audios/${songIndex+1}.mp3`;
-    imageContainer.src = `images/${songIndex+1}.jpg`;
+    imageContainer.src = `images/${songIndex+1}.webp`;
     songTitle.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
